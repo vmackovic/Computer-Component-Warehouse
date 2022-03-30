@@ -1,0 +1,18 @@
+*pgAdmin4 je bio problematičan u vezi pg_dump funkcije pa sam morao napraviti drugi način na koji se može importat baza u njega, to sam uspio pomoču navicat alata.
+
+Postupak pokretanja baze
+
+1) Pokrenuti pgAdmin 4 i desnim klikom na "Databases" kreirati bazu pod nazivom "Skladiste"
+2) Pokrenuti Navicat 15 i napraviti novu konekciju koja se spaja na pgAdmin4
+3) U Navicat 15 dvostruki klik na stvorenu bazu, nakon toga dvostruki klik na "public"
+4) Desni klik na "public", odabrati opciju "Execute SQL file"
+5) U okviru što se otvori odabrati pod opcijom "File" gumb sa tri točkice "..."
+6) Odabrati datoteku "SkladišteKomponenti.sql" i kliknuti na gumb "Start"
+7) Kada završi proces baza podataka bi trebala biti spremna
+
+Pokretanje Desktop Aplikacije
+
+1) Ući u mapu Skladiste_Racunalnih_Komponenti
+2) Dvostruki klik na Skladiste_Racunalnih_Komponenti.sln
+3) Unutar klase SpajanjeNaDB.cs, unutar funkcije "SpojiNaBazu" prilagoditi postavke kao što je ime korisnika, lozinka itd.
+3) Pritisnuti F5 za pokretanje glavnog izbornika
